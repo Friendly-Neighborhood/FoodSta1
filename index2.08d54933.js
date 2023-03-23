@@ -1,0 +1,2 @@
+var signUpButton=document.getElementById("signUp"),signInButton=document.getElementById("signIn"),container=document.getElementById("container");signUpButton.addEventListener("click",(function(){return container.classList.add("right-panel-active")})),signInButton.addEventListener("click",(function(){return container.classList.remove("right-panel-active")}));
+//# sourceMappingURL=index2.08d54933.js.map
