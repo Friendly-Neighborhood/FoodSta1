@@ -1,0 +1,222 @@
+<header class="header">
+  <div class="container header__container">
+    <a class="logo header__logo link" href="">
+      <img
+        srcset="
+          ./images/logo/logo_66_1x.png 1x,
+          ./images/logo/logo_66_2x.png 2x
+        "
+        src="./images/logo/logo_66_1x.png"
+        alt="logo"
+      />
+    </a>
+    <button class="menu-burger" type="button" data-menu-open>
+      <svg width="28" height="28">
+        <use href="./images/icons.svg#burger-menu"></use>
+      </svg>
+    </button>
+
+    <nav class="nav">
+      <ul class="nav__list list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--current link" href="#home">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href="#about">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href="#service">Service</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href="#menu">Menu</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="reg" href="/src/index2.html">Log in</a>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+
+<div class="menu-overlay is-open" data-menu>
+  <div class="menu-container">
+    <button class="menu-btn" type="button" data-menu-close>
+      <svg class="menu-close-icon" width="11" height="11">
+        <use href="./images/icons.svg#menu-close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-nav list">
+      <li class="mobile-nav-item">
+        <a href="#home" class="mobile-link link">Home</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#about" class="mobile-link link">About</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#service" class="mobile-link link">Service</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#menu" class="mobile-link link">Menu</a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#contact" class="mobile-link link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Modal 2-->
+<!-- <div class="backdrop is-hidden" data-modal2>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-modal2-close>
+      <svg class="modal__close-icon" width="24" height="24">
+        <use href="./images/icons.svg#menu-close"></use>
+      </svg>
+    </button>
+    <form class="modal-form" novalidate>
+      <strong class="modal-form__contact-head">Registration</strong>
+      <div
+        class="modal-form__group"
+        role="group"
+        aria-labelledby="contact_head"
+        id="contact_head"
+      >
+      
+        <label class="modal-form__field">
+          <span class="modal-form__label">E-mail</span>
+          <input
+            class="modal-form__input add"
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            title="Invalid email address"
+            required
+          />
+          <div class="modal-form-notfication">
+            <svg class="modal-notfication__icon" width="12" height="22">
+              <use href="./images/icons.svg#sign"></use>
+            </svg>
+            <span> Please enter a valid email address </span>
+          </div>
+        </label>
+
+        <label class="modal-form__field">
+          <span class="modal-form__label">Password</span>
+          <input
+            class="modal-form__input add"
+            type="text"
+            name="text"
+            placeholder="Password"
+            
+          />
+          <div class="modal-form-notfication">
+            <svg class="modal-notfication__icon" width="12" height="22">
+              <use href="./images/icons.svg#sign"></use>
+            </svg>
+            </div>
+        </label>
+
+        <label class="modal-form__field">
+          <span class="modal-form__label">Confirm password</span>
+          <input
+            class="modal-form__input add"
+            type="text"
+            name="text"
+            placeholder="Password"
+            
+          />
+          <div class="modal-form-notfication">
+            <svg class="modal-notfication__icon" width="12" height="22">
+              <use href="./images/icons.svg#sign"></use>
+            </svg>
+            </div>
+        </label>
+      </div>
+      
+      <button
+        class="btn modal-form__btn"
+        type="submit"
+        title="All fields are required"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal 3-->
+<!-- <div class="backdrop is-hidden" data-modal3>
+  <div class="modal">
+    <button type="button" class="modal__close-btn" data-modal3-close>
+      <svg class="modal__close-icon" width="24" height="24">
+        <use href="./images/icons.svg#menu-close"></use>
+      </svg>
+    </button>
+    <form class="modal-form" novalidate>
+      <strong class="modal-form__contact-head">Log in</strong>
+      <div
+        class="modal-form__group"
+        role="group"
+        aria-labelledby="contact_head"
+        id="contact_head"
+      >
+        
+        <label class="modal-form__field">
+          <span class="modal-form__label">E-mail</span>
+          <input
+            class="modal-form__input add"
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            title="Invalid email address"
+            required
+          />
+          <div class="modal-form-notfication">
+            <svg class="modal-notfication__icon" width="12" height="22">
+              <use href="./images/icons.svg#sign"></use>
+            </svg>
+            <span> Please enter a valid email address </span>
+          </div>
+        </label>
+
+        <label class="modal-form__field">
+          <span class="modal-form__label">Password</span>
+          <input
+            class="modal-form__input add"
+            type="text"
+            name="name"
+            required
+            minlength="2"
+            maxlength="25"
+            placeholder="Your password"
+            required
+          />
+          <div class="modal-form-notfication">
+            <svg class="modal-notfication__icon" width="12" height="22">
+              <use href="./images/icons.svg#sign"></use>
+            </svg>
+            <span> Please enter a valid email address </span>
+          </div>
+        </label>
+      </div>
+
+      <button
+        class="btn modal-form__btn"
+        type="submit"
+        title="All fields are required"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div> --> 
+
+<script src="./js/menu.js"></script>
+<script src="./index.js"></script>
